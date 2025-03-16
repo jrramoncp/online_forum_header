@@ -21,9 +21,13 @@ body{
 }
 
 .page{
-    max-width: 1400px;
+    max-width: 1600px;
     padding-left: 16px;
     padding-right: 16px;
     margin-right: auto;
     margin-left: auto;
+}
+
+main{
+    display: flex;
 }
