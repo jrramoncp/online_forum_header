@@ -12,7 +12,12 @@
 }
 
 //BASE STYLES
-
+body{
+    background-color: v.$background-color;
+    background-image: url(/img/background-lines.svg);
+    background-repeat: no-repeat;
+    background-position: 100% -23%;
+}
 
 .page{
     max-width: 1400px;
