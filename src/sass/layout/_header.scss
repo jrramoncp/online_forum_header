@@ -1,3 +1,36 @@
 @use '../abstract/_variables' as v;
 @use '../abstract/_mixins' as m;
 
+header.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    .main__nav{
+        ul{
+            @include m.reset-list();
+            li{
+                a{
+                    color: v.$font-tertiary-color;
+                    &:hover{
+                        color: v.$font-primary-color;
+                        position: relative;
+                        &::after{
+                            content: "";
+                            display: inline-block;
+                            background-color: v.$red-color;
+                            height: 2px;
+                            width: 20px;
+                            position: absolute;
+                            bottom: -3px;
+                            left: 0;
+                        }
+                    }
+                }
+                
+            }
+        }
+        
+    }
+}
