@@ -3,8 +3,67 @@
 
 main{
     display: flex;
-    
+    justify-content: space-between;
+    section.hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 45%;
+        // HERO MAIN
+        .hero__main{
+            .hero__title{
+                font-size: 70px;
+                font-weight: v.$font-bold;
+                font-family: v.$title-font;
+                margin-bottom: 15px;
+            }
 
+            p{
+                font-size: 22px;
+                color: v.$font-secondary-color;
+                line-height: 40px;
+                margin-bottom: 30px;
+            }
+
+            .hero__links{
+                @include m.reset-list();
+                .arrow{
+                    display: inline-block;
+                    background-image: url(/img/arrow-icon.svg);
+                    background-repeat: no-repeat;
+                    background-position: right center;
+                    background-size: contain;
+                    padding-right: 30px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                .btn{
+                    display: inline-block;
+                    background-color: v.$red-color;
+                    padding: 15px 50px;
+                    border-top-left-radius: 16px;
+                    border-top-right-radius: 16px;
+                    border-bottom-right-radius: 16px;
+                    transition: 0.5s ease;
+                    &:hover{
+                        box-shadow:0px 0px 17px 8px v.$gold-shadow;
+                        background-color: #ff9800;
+                        color: #fff3e0;
+                    }
+                }
+            }
+
+        }
+
+            
+
+
+
+        .hero__services{
+            display: flex;
+        }
+    }
 
 
 
@@ -13,14 +72,25 @@ main{
 
     div.img__container{
         min-width: 50%; 
+        max-width: 50%;
         display: flex;
         align-items: center;
         gap: 20px;
+
+        img{
+            transition: transform 0.3s ease-in-out;
+            border-radius: 96px;
+            &:hover{
+                box-shadow:0px 0px 17px 8px v.$gold-shadow;
+                transform: scale(1.1);
+            }
+            
+        }
         .container1{
             display: grid;
             grid-template-columns: repeat(1fr, 2);
             grid-template-rows: repeat(1fr, 3); 
-            gap: 20px;
+            gap: 25px;
 
             .item1{
                 grid-column: 1;
@@ -38,6 +108,7 @@ main{
                 grid-row: 1;
             }
             
+
             .item4{
                 grid-column: 2;
                 grid-row: 2 / span 2;
