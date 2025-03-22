@@ -55,13 +55,15 @@ main{
             }
 
         }
-
-            
-
-
-
+        //HERO SERVICES
         .hero__services{
             display: flex;
+            
+            article{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
         }
     }
 
