@@ -17,7 +17,7 @@ body{
     background-color: v.$background-color;
     background-image: url(/img/background-lines.svg);
     background-repeat: no-repeat;
-    background-position: 100% -23%;
+    background-position: right bottom -141px;
 }
 
 .page{
@@ -28,6 +28,3 @@ body{
     margin-left: auto;
 }
 
-main{
-    display: flex;
-}
